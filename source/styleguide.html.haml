@@ -1,0 +1,16 @@
+.styleguide
+  .container
+
+    .styleguide-block
+      %h5 Logo
+      = image_tag "//unsplash.it/200/100"
+
+    .brand-colors.styleguide-block
+      %h5 Brand Colors
+      .swatch.alizarin-crimson
+        %input{value: "$color-alizarin-crimson", readonly: true}
+
+    .buttons.styleguide-block
+      %h5 Buttons
+      %button.btn.orange Button Text
+      %button.btn.blue Button Text

@@ -1,0 +1,35 @@
+// Responsive mixins
+=media-xs
+  @media screen and (max-width: $screen-sm - 1)
+    @content
+
+=media-sm
+  @media screen and (min-width: $screen-sm)
+    @content
+
+=media-sm-only
+  +media(min-width $screen-sm max-width $screen-md - 1)
+    @content
+
+=media-sm-md-only
+  +media(min-width $screen-sm max-width $screen-lg - 1)
+    @content
+
+=media-md
+  @media screen and (min-width: $screen-md)
+    @content
+
+=media-lg
+  @media screen and (min-width: $screen-lg)
+    @content
+
+// Support for styling input placeholder text
+=placeholder
+  &.placeholder
+    @content
+
+  &::-moz-placeholder
+    @content
+
+  &::-webkit-input-placeholder
+    @content
