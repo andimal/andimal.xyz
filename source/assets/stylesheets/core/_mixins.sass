@@ -33,3 +33,9 @@
 
   &::-webkit-input-placeholder
     @content
+
+=bg-cover($image_url: '')
+  @if $image_url
+    background-image: $image_url
+  background-size: cover
+  background-position: center

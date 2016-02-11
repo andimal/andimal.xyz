@@ -19,6 +19,7 @@ page '/*.txt', layout: false
 # General configuration
 activate :directory_indexes
 
+sprockets.append_path File.join "#{root}", "bower_components"
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'

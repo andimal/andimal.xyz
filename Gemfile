@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'haml'
+gem 'jquery-middleman'
 gem 'manhattan-sass',       '~> 0.4.3'
 gem 'middleman',            '~> 3.4.1'
 gem 'middleman-livereload'

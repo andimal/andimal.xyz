@@ -1,0 +1,55 @@
+.nav-index-open
+  .image
+    +filter(blur(8px))
+
+  .date
+    opacity: 0.1 !important
+    transition: none !important
+
+.image
+  position: relative
+  top: -8px
+  left: -1%
+  width: 102%
+  height: 105vh
+  overflow: hidden
+  +bg-cover(url('../images/2016/02/11-850.JPG'))
+
+  .meta
+    position: absolute
+    bottom: -8px
+    right: -8px
+    width: 33%
+    
+    h1
+      > span
+        display: block
+        opacity: 0.15
+        cursor: pointer
+        +transition
+
+        &:hover
+          opacity: 0.4
+
+      span
+        font-weight: bold
+        font-size: 60px
+        color: white
+        line-height: 0.8
+
+.slabtexted .slabtext
+  display: -moz-inline-box
+  display: inline-block
+  white-space: nowrap
+
+.slabtextinactive .slabtext
+  display: inline
+  white-space: normal
+  font-size: 1em !important
+  letter-spacing: inherit !important
+  word-spacing: inherit !important
+  *letter-spacing: 0 !important
+  *word-spacing: 0 !important
+
+.slabtextdone .slabtext
+  display: block
