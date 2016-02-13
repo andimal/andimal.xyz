@@ -17,6 +17,9 @@
     "tests"
   ],
   "devDependencies": {
-    "slabText": "^2.2.0"
+    "slabText": "^2.2.0",
+    "AngularJS": "angular-latest#^1.5.0",
+    "restangular": "^1.5.1",
+    "angular-ui-router": "^0.2.18"
   }
 }
