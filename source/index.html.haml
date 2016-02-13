@@ -1,5 +1,6 @@
 %main
-  .image
+  .image-wrapper
+    .image
     .meta
       %h1
         %span.date
@@ -10,5 +11,8 @@
           %span.slabtext Michigan
 
   %nav.index
-    .container
-      %h1 February 2016
+    %h1 February 2016
+    %ul.nav-items.row.omega-sm-4.omega-md-4.omega-lg-4
+      - 16.times do
+        %li.nav-item.col-sm-3
+          %a{href: "#"}
